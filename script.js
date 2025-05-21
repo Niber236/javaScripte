@@ -23,6 +23,10 @@ function getData() {
          console.log(containerSectionDeux);
          
          
+         let Articleprincipal = document.createElement('Article')
+         
+         let journal = data.journal
+         console.log(journal);
          
       
 
