@@ -1,0 +1,101 @@
+{
+  "journal": {
+    "nomJournal": "Rimes & Flow",
+    "phraseAccroche": "La nouvelle génération du rap francophone en pleine explosion",
+    "texteAppelAction": "Abonnez-vous pour suivre les talents qui font vibrer la scène urbaine",
+    "articlePrincipal": {
+      "titre": "Ziak : la voix sombre qui captive la jeunesse",
+      "description": "Avec ses textes bruts et son style unique, Ziak s’impose comme l’un des artistes incontournables du rap français contemporain.",
+      "date": "20 Mai 2025",
+      "theme": "Innovations",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Ziak_2022.jpg/800px-Ziak_2022.jpg"
+    },
+    "articles": [
+      {
+        "titre": "Lyna Mahyem : entre puissance et sensibilité",
+        "date": "15 Avril 2025",
+        "theme": "Recherche",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Lyna_Mahyem_2021.jpg/800px-Lyna_Mahyem_2021.jpg"
+      },
+      {
+        "titre": "La montée du rap conscient dans la francophonie",
+        "date": "10 Mars 2025",
+        "theme": "Applications",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Rap_Conscient_France.jpg/800px-Rap_Conscient_France.jpg"
+      },
+      {
+        "titre": "Les clashs et débats qui animent la scène urbaine",
+        "date": "25 Février 2025",
+        "theme": "Débats",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Rap_Concert_France.jpg/800px-Rap_Concert_France.jpg"
+      },
+      {
+        "titre": "Collaborations entre artistes francophones : un pont culturel",
+        "date": "10 Janvier 2025",
+        "theme": "Partenariats",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Rap_Collaboration.jpg/800px-Rap_Collaboration.jpg"
+      },
+      {
+        "titre": "Rap et responsabilité sociale : entre expression et engagement",
+        "date": "5 Décembre 2024",
+        "theme": "Éthique",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Rap_Social_Engagement.jpg/800px-Rap_Social_Engagement.jpg"
+      }
+    ],
+    "themes": [
+      {
+        "nom": "Innovations",
+        "description": "Les nouveaux sons et styles qui réinventent le rap francophone."
+      },
+      {
+        "nom": "Recherche",
+        "description": "Études des parcours et influences des jeunes rappeurs."
+      },
+      {
+        "nom": "Applications",
+        "description": "L'impact social et culturel du rap dans les pays francophones."
+      },
+      {
+        "nom": "Débats",
+        "description": "Les controverses, clashs et discussions qui font vibrer la scène urbaine."
+      },
+      {
+        "nom": "Partenariats",
+        "description": "Les collaborations entre artistes et producteurs francophones."
+      },
+      {
+        "nom": "Éthique",
+        "description": "Les responsabilités sociales et les messages véhiculés par le rap."
+      }
+    ],
+    "auteurs": [
+      {
+        "prenom": "Claire",
+        "typeExperience": "Journaliste culturelle",
+        "presentation": "Je couvre la scène musicale urbaine avec une attention particulière pour le rap francophone."
+      },
+      {
+        "prenom": "Thomas",
+        "typeExperience": "Analyste musical",
+        "presentation": "Je m'intéresse aux tendances et influences dans le rap moderne francophone."
+      },
+      {
+        "prenom": "Elena",
+        "typeExperience": "Sociologue de la culture urbaine",
+        "presentation": "J'étudie les dynamiques sociales et identitaires liées à la musique urbaine."
+      }
+    ]
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
