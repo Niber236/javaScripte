@@ -25,6 +25,10 @@ nav{
    z-index: 1000;
 }
 
+header{
+   gap: 75px;
+}
+
 nav ul{
    display: flex;
    gap: 16px;
