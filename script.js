@@ -11,89 +11,102 @@ function getData() {
        // Traitez les données comme vous le souhaitez
       console.log(" journal");
 
-      // 1. Nom du journal
+      // coder ici
       let nomJournal = document.getElementById('nomJournal');
       console.log("nomJournal", );
       nomJournal.textContent = journal.nomJournal;
-      console.log(" Nom du journal inséré :", journal.nomJournal);
+      console.log(" Nom du journal ");
 
-      // 2. Phrase d'accroche
+      
       let phraseAccroche = document.getElementById('phraseAccroche');
-      console.log(" Élément phraseAccroche :", phraseAccroche);
+      console.log(" phraseAccroche ");
       phraseAccroche.textContent = journal.phraseAccroche;
-      console.log(" Phrase d'accroche insérée :", journal.phraseAccroche);
+      console.log("phraseAccroche ");
 
-      // 3. Article principal
+      
       let sectionOne = document.getElementById('sectionOne');
+      console.log(sectionOne);
+      
       let sectionDeux = document.getElementById('sectionDeux');
+      console.log(sectionDeux);
+      
       let sectionTrois = document.getElementById('sectionTrois');
+      console.log(sectionTrois);
+      
       let sectionQuatre = document.getElementById('sectionQuatre');
+      console.log(sectionQuatre);
+      
 
       sectionOne.innerHTML = `<h2>${journal.articlePrincipal.titre}</h2>`;
-      console.log(" Titre de l'article principal :", journal.articlePrincipal.titre);
+     
 
       sectionDeux.innerHTML = `<p>${journal.articlePrincipal.description}</p>`;
-      console.log("Description de l'article principal :", journal.articlePrincipal.description);
+     
 
-      sectionTrois.innerHTML = `<small>${journal.articlePrincipal.date}</small>`;
-      console.log(" Date de l'article principal :", journal.articlePrincipal.date);
-
+      sectionTrois.innerHTML = `${journal.articlePrincipal.date}</small>`;
+      
       sectionQuatre.innerHTML = `<img src="${journal.articlePrincipal.image}" alt="Article principal" width="300">`;
-      console.log(" Image de l'article principal :", journal.articlePrincipal.image);
+      
 
-      // 4. Autres articles
+      
       const artCont = document.getElementById('articlesSection');
-      console.log(" Section des autres articles :", artCont);
+     
+const articlesSection = document.getElementById('articlesSection');
+console.log('articlesSection');
 
-      journal.articles.forEach((a, i) => {
-        const div = document.createElement('div');
-        div.innerHTML = `
-          <h3>${a.titre}</h3>
-          <p>${a.date} — Thème : ${a.theme}</p>
-          <img src="${a.image}" alt="${a.titre}" width="250">
-        `;
-        artCont.appendChild(div);
 
-        console.log(` Article ${i + 1} ajouté :`, a);
-      });
+journal.articles.forEach((article, index) => {
+  const articleDiv = document.createElement('div');
+  
+  articleDiv.innerHTML = `
+    <h3>${article.titre}</h3>
+    <p>${article.date} — Thème : ${article.theme}</p>
+    <img src="${article.image}" alt="${article.titre}" width="250">
+  `;
 
-      // 5. Thèmes
-      const themeCont = document.getElementById('themesSection');
-      console.log("Section des thèmes :", themeCont);
+  articlesSection.appendChild(articleDiv);
 
-      journal.themes.forEach((t, i) => {
-        const div = document.createElement('div');
-        div.innerHTML = `<h4>${t.nom}</h4><p>${t.description}</p>`;
-        themeCont.appendChild(div);
+  // Affiche l'article dans la console pour vérification
+  console.log('articleSection');
+});
 
-        console.log(`Thème ${i + 1} ajouté :`, t);
-      });
 
-      // 6. Auteurs
-      const authCont = document.getElementById('auteursSection');
-      console.log("Section des auteurs :", authCont);
+// SECTION : THEMES
+const themesSection = document.getElementById('themesSection');
 
-      journal.auteurs.forEach((u, i) => {
-        const div = document.createElement('div');
-        div.innerHTML = `
-          <h4>${u.prenom}</h4>
-          <p>${u.typeExperience}</p>
-          <p>${u.presentation}</p>
-        `;
-        authCont.appendChild(div);
- console.log(`Auteur ${i+1} ajouté :`, u);
-      });
+journal.themes.forEach((theme, index) => {
+  const themeDiv = document.createElement('div');
+  console.log('themeDiv');
+  
+
+  themeDiv.innerHTML = `
+    <h4>${theme.nom}</h4>
+    <p>${theme.description}</p>
+  `;
+
+  themesSection.appendChild(themeDiv);
+});
+
+
+// SECTION : AUTEURS
+const auteursSection = document.getElementById('auteursSection');
+
+journal.auteurs.forEach((auteur, index) => {
+  const auteurDiv = document.createElement('div');
+  console.log(auteurDiv);
+  
+
+  auteurDiv.innerHTML = `
+    <h4>${auteur.prenom}</h4>
+    <p>${auteur.typeExperience}</p>
+    <p>${auteur.presentation}</p>
+  `;
+
+  auteursSection.appendChild(auteurDiv);
+});
       
        
-         
-        
-      
-       
-        
-         
-       
-
-      
+            
 
        /// FIN DU CODE
      })
@@ -102,4 +115,4 @@ function getData() {
  
  getData();
 
- ///ON écrit les fonctions ici
+ 
