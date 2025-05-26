@@ -19,7 +19,6 @@ function getData() {
 
       
       let phraseAccroche = document.getElementById('phraseAccroche');
-      console.log(" phraseAccroche ");
       phraseAccroche.textContent = journal.phraseAccroche;
       console.log("phraseAccroche ");
 
@@ -43,7 +42,7 @@ function getData() {
       sectionDeux.innerHTML = `<p>${journal.articlePrincipal.description}</p>`;
      
 
-      sectionTrois.innerHTML = `${journal.articlePrincipal.date}</small>`;
+      sectionTrois.innerHTML = `<h4>${journal.articlePrincipal.date}`;
       
       sectionQuatre.innerHTML = `<img src="${journal.articlePrincipal.image}" alt="Article principal" width="300">`;
       
@@ -55,12 +54,19 @@ const articlesSection = document.getElementById('articlesSection');
 console.log('articlesSection');
 
 
-journal.articles.forEach((article, index) => {
+journal.articles.forEach((article) => {
   const articleDiv = document.createElement('div');
   
+ /*let h2 = document.createElement('h2')
+  h2.textContent = article.titre
+  console.log(h2);
+  let main = document.querySelector('main')
+  main.appendChild(h2)*/
+
   articleDiv.innerHTML = `
     <h3>${article.titre}</h3>
-    <p>${article.date} — Thème : ${article.theme}</p>
+    <p>${article.date} </p> 
+    <p> ${article.theme}</p>
     <img src="${article.image}" alt="${article.titre}" width="250">
   `;
 
@@ -91,7 +97,7 @@ journal.themes.forEach((theme, index) => {
 // SECTION : AUTEURS
 const auteursSection = document.getElementById('auteursSection');
 
-journal.auteurs.forEach((auteur, index) => {
+journal.auteurs.forEach((auteur, index) => {  
   const auteurDiv = document.createElement('div');
   console.log(auteurDiv);
   

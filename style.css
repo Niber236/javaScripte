@@ -9,8 +9,8 @@ html, body{
 }
 
 body{
-   background-color: #f9f9f9;
-   color: #333;
+   background-color: #a04949;
+   color: #ffffff;
 }
 
 nav{
@@ -18,8 +18,8 @@ nav{
    justify-content: space-between;
    align-items: center;
    padding: 16px 32px;
-   box-shadow: 0px 0px 11px 4px rgba(0,0,0,0.1);
-   background-color: white;
+   box-shadow: 0px 0px 11px 4px rgba(255, 255, 255, 0.1);
+   background-color: rgb(154, 43, 43);
    position: sticky;
    top: 0;
    z-index: 1000;
@@ -33,16 +33,19 @@ nav ul{
    margin: 0;
 }
 
-#logo{
+Img{
    display: flex;
-   gap: 16px;
+   gap: 22px;
    align-items: center;
+   color: #ffffff;
+  
+   border-radius: 15px;
 }
 
 .boutons-container{
    display: flex;
    align-items: center;
-   gap: 16px;
+   gap: 50px;
 }
 
 main{
@@ -88,7 +91,7 @@ main{
    width: 80px;
    height: 80px;
    border-radius: 100%;
-   border: 2px solid black;
+   border: 2px solid rgb(255, 255, 255);
    object-fit: cover;
 }
 
@@ -103,10 +106,10 @@ main{
    color: #8005F2;
 }
 
-.image, .carte{
+.imag{
    display: flex;
    background: white;
-   color: black;
+   color: rgb(255, 255, 255);
    flex-direction: column;
    align-items: center;
    font-family: 'Poppins', sans-serif;
