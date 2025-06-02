@@ -26,10 +26,10 @@ nav{
 }
 
 header{
-   gap: 75px;
+   
 }
 
-nav ul{
+n{
    display: flex;
    gap: 16px;
    list-style: none;
@@ -46,11 +46,7 @@ Img{
    border-radius: 15px;
 }
 
-.boutons-container{
-   display: flex;
-   align-items: center;
-   gap: 50px;
-}
+
 
 main{
    display: flex;
@@ -60,123 +56,4 @@ main{
    padding: 68px 32px;
 } 
 
-.bouton{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   border-radius: 8px;
-   text-decoration: none;
-   padding: 8px 16px;
-   font-weight: 500;
-   transition: all .3s ease-in-out;
-}
 
-.bouton.primaire{
-   background: #8005F2;
-   color: white;
-}
-
-.bouton.primaire:hover{
-   background: #c38ff5;
-}
-
-.bouton.secondaire{
-   background: transparent;
-   color: #8005F2;
-   border: 2px solid #8005F2;
-}
-
-.bouton.secondaire:hover{
-   border: 2px solid #c38ff5;
-   color: #c38ff5;
-}
-
-.avatar{
-   width: 80px;
-   height: 80px;
-   border-radius: 100%;
-   border: 2px solid rgb(255, 255, 255);
-   object-fit: cover;
-}
-
-.lien{
-   color: black;
-   text-decoration: none;
-   font-weight: 500;
-   transition: all .3s ease-in-out;
-}
-
-.lien:hover{
-   color: #8005F2;
-}
-
-.imag{
-   display: flex;
-   background: white;
-   color: rgb(255, 255, 255);
-   flex-direction: column;
-   align-items: center;
-   font-family: 'Poppins', sans-serif;
-   gap: 10px;
-   border-radius: 16px;
-   overflow: hidden;
-   box-shadow: 0px 0px 11px 4px rgba(0,0,0,0.1);
-   transition: transform .3s ease-in-out;
-   width: 300px;
-   margin: 16px;
-}
-
-.imges{
-   width: 100%;
-   height: 200px;
-   object-fit: cover;
-}
-
-.carte:hover{
-   transform: scale(1.05);
-}
-
-.carte-info{
-   padding: 16px;
-   text-align: center;
-}
-
-.prix{
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-}
-
-.prix h3, .prix h2 {
-   margin: 0;
-}
-
-.prix h3{
-   color: #8005F2;
-}
-
-.cartes-container{
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   gap: 32px;
-   padding: 32px 0;
-}
-
-main h1{
-   text-transform: uppercase;
-   font-weight: 800;
-   margin-bottom: 32px;
-   text-align: center;
-}
-
-footer{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   padding: 16px;
-   background-color: #f0f0f0;
-   font-size: 14px;
-   color: #555;
-   margin-top: 32px;
-}
