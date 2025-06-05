@@ -1,59 +1,72 @@
 /* importation de la police 'Poppins' de Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;900&display=swap');
 
-html, body{
-   font-family: 'Poppins', sans-serif;
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+/* Importation de la police Poppins déjà présente dans votre code */
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #a04949; /* Couleur de fond principale */
+  color: #ffffff; /* Couleur du texte principale */
 }
 
-body{
-   background-color: #a04949;
-   color: #ffffff;
+/* Style pour la barre de navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: rgb(154, 43, 43);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-nav{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 16px 32px;
-   box-shadow: 0px 0px 11px 4px rgba(255, 255, 255, 0.1);
-   background-color: rgb(154, 43, 43);
-   position: sticky;
-   top: 0;
-   z-index: 1000;
+/* Logo dans la navigation */
+nav img {
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
 }
 
-header{
-   
+/* Titre du journal */
+#nomJournal {
+  font-size: 2em;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
 }
 
-nav{
-   display: flex;
-   gap: 16px;
-   list-style: none;
-   padding: 0;
-   margin: 0;
+/* En-tête principal */
+header {
+  padding: 40px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #d36c6c, #8b3a3a);
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-Img{
-   display: flex;
-   gap: 22px;
-   align-items: center;
-   color: #ffffff;
-  
-   border-radius: 15px;
+/* Phrase accroche */
+#phraseAccroche {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  font-weight: 500;
 }
 
+/* Sections dans l'en-tête */
+section {
+  margin-bottom: 20px;
+}
 
-
-main{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   padding: 68px 32px;
-} 
-
+/* Main content styling */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  max-width: 120
+}
 
